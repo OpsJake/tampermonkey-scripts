@@ -1,0 +1,11 @@
+{
+  "name": "atlas-tampermonkey-scripts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/unifi-table-export.test.cjs",
+    "check": "node --check unifi-ip-obfuscator/unifi-ip-obfuscator.user.js && bash -n scripts/publish_public.sh && git diff --check"
+  },
+  "engines": { "node": ">=18" },
+  "devDependencies": { "jsdom": "24.1.3" }
+}
